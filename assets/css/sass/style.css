@@ -1788,9 +1788,9 @@ progress {
   .form-control:focus {
     color: #212529;
     background-color: #fff;
-    border-color: #86b7fe;
+    border-color: rgb(212, 120, 0);
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); }
+    box-shadow: 0 0 0 0.25rem rgb(245, 139, 0); }
   .form-control::-webkit-date-and-time-value {
     height: 1.5em; }
   .form-control::placeholder {
@@ -2573,17 +2573,17 @@ textarea.form-control-lg {
   --bs-gradient: none; }
 
 .btn-outline-success {
-  --bs-btn-color: #198754;
-  --bs-btn-border-color: #198754;
+  --bs-btn-color: rgb(212, 120, 0);
+  --bs-btn-border-color: rgb(212, 120, 0);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #198754;
-  --bs-btn-hover-border-color: #198754;
+  --bs-btn-hover-bg: rgb(212, 120, 0);
+  --bs-btn-hover-border-color: #rgb(212, 120, 0)
   --bs-btn-focus-shadow-rgb: 25, 135, 84;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #198754;
-  --bs-btn-active-border-color: #198754;
+  --bs-btn-active-bg: rgb(212, 120, 0);
+  --bs-btn-active-border-color: rgb(212, 120, 0);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #198754;
+  --bs-btn-disabled-color: rgb(212, 120, 0);
   --bs-btn-disabled-bg: transparent;
   --bs-gradient: none; }
 
@@ -9276,5 +9276,9 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important; } }
+body {
+  background-color: #d47800;
+  height: 100vh;
+  font-family: sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
