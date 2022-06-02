@@ -4,14 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="images/SGN_06_02_2022_1654154060984.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/sass/style.css">
+  <script src="https://kit.fontawesome.com/40e3698765.js" crossorigin="anonymous"></script>
   <title>Enigma-Tic</title>
 </head>
 
-<body>
+<body class="bg-primary">
   <!-- Fixed navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <nav class="border-bottom navbar navbar-expand-md navbar-dark navbar fixed-top bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Enigma-Tic</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -58,18 +60,90 @@
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Recherche..." aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Recherche</button>
+          <button class="btn btn-outline-primary" type="submit">Recherche</button>
         </form>
       </div>
     </div>
   </nav>
-  
-  <div class="container-fluid">
+  <!-- haut de page avec image-->
+  <div class="container h-50">
+    <div class="bg-locked h-100 row ">
+      <div class="d-flex opacity-50 bg-black bg-primary col-md-6 text-center">
+        <p class="d-flex align-items-center  opacity-100 fw-bold h-100 text-light ">
+          Enigma-Tic est un site qui propose des énigmes avec leurs solutions. Classées dans des catégories afin de
+          mieux s'y retrouver, il y en a pour tous les goûts et pour tous les niveaux avec des devinettes simples mais
+          aussi des énigmes difficiles. Créé en 2022, Enigma-Tic vous propose d'envoyer vos énigmes afin de faire vivre
+          cette petite communauté. Amusez-vous bien !
+        </p>
+      </div>
+      <div class="opacity-25 bg-primary col-md-6"></div>
+    </div>
+  </div>
+  <!-- sous l'image -->
+  <div class="h-50 container bg-success">
+
     <div class="row">
-      <h1>Enigma-Tic</h1>
+      <div class="h-100 col-md-4">
+        <h4 class="mt-2 text-center  text-uppercase fw-bold">Voici une selection d'enigme</h4>
+        <ul class="h-50">
+          <li>a</li>
+          <li>b</li>
+          <li>c</li>
+        </ul>
+      </div>
+      <div class="col-md-8">
+        <h4 class="mt-2 text-center  text-uppercase fw-bold">Contactez-nous !</h4>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Votre nom (ou pseudo)*</label>
+            <input type="email" class="form-control" placeholder="Nom" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1"  class="form-label">Votre email*</label>
+            <input type="password" class="form-control" placeholder="Mail@exemple.fr" id="exampleInputPassword1">
+          </div>
+          <p>Sujet<br />
+            <span class=" wpcf7-form-control-wrap menu-742"><select name="menu-742"
+                class="form-label wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true"
+                aria-invalid="false">
+                <option value="Contacter le webmaster">Contacter le webmaster</option>
+                <option value="Se désabonner de la newsletter">Se désabonner de la newsletter</option>
+                <option value="Signaler un bug">Signaler un bug</option>
+                <option value="Autre">Autre</option>
+              </select>
+            </span>
+          </p>
+          
+          <textarea name="Votre message ici" placeholder="Votre Enigme" id="" cols="70" rows="5"></textarea>
+          <textarea name="Votre message ici" placeholder="Votre Solution" id="" cols="70" rows="5"></textarea>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+        
+      </div>
+    </div>
+
+
+  </div>
+  <div class="container text-center mb-5">
+    <div class="row bg-dark">
+      <div class="col-md-6"><a href="/assets/aide.html">
+          <i class=" fa-solid fa-handshake-angle"></i>
+          <br>
+          Aide au Enigme
+        </a>
+      </div>
+
+      <div class="col-md-6">
+        <a class="txt-dark" href="/assets/proposer.html">
+          <i class=" fa-solid fa-plus-minus"></i>
+          <br>
+          Page Proposer
+        </a>
+      </div>
     </div>
   </div>
 
+  <!-- script de js -->
   <script src="./js/index.js"></script>
 </body>
 
